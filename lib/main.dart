@@ -1,4 +1,5 @@
-import 'package:arduino_ctrl/home.dart';
+import 'package:arduino_ctrl/home/home.dart';
+import 'package:arduino_ctrl/home/home_controlller.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -8,6 +9,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
+  Get.put(HomeController());
 
   var customTheme = CustomFlexThemeData(
     scheme: FlexScheme.indigo,

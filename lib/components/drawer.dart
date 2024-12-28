@@ -1,22 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:flutter_utils/sisitech_themes/theme_controller.dart';
 import 'package:flutter_utils/sisitech_themes/theme_picker.dart';
 import 'package:get/get.dart';
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(toolbarHeight: 40.0),
-      drawer: const AppDrawer(),
-      body: const Center(
-        child: Text('Ola 👋🏽'),
-      ),
-    );
-  }
-}
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -32,10 +18,10 @@ class AppDrawer extends StatelessWidget {
               accountEmail: const Text(''),
               currentAccountPicture: Container(
                 decoration: BoxDecoration(
-                  color: Get.theme.colorScheme.inverseSurface,
+                  color: Get.theme.colorScheme.primaryContainer,
                   shape: BoxShape.circle,
                 ),
-                child: Image.asset('assets/robo.png'),
+                child: SvgPicture.asset('assets/robo.svg'),
               ),
             ),
             ListTile(
