@@ -29,7 +29,7 @@ dependency_overrides:
   flutter_utils:
     git:
       url: git@github.com:sisitech/flutter_utils.git
-      ref: "34dc0db"
+      ref: "b68a85f"
 
 flutter:
   uses-material-design: true
